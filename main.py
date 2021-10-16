@@ -17,7 +17,7 @@ def judge(imge, x, y):
         return '1'
     else:
         return '0'
-
+    
 if __name__ == "__main__":
     #px = img[200, 100]
     #print(px)
