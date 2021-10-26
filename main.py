@@ -76,6 +76,7 @@ def judge(imge, x, y):
         return 1
     else:
         return 0
+
 '''    
 #初步想法：弄一个状态机，就是循迹吧，把周围8个像素点变成一个二进制数串，然后进行判断
 def order_FSM(bin):
@@ -88,6 +89,7 @@ def order_FSM(bin):
 -------0 0 0         从左往右，从上往下 依次从低位排起
 -------1 0 1
 '''
+
 def binary_create(x, y, bind):
     bind = judge(img, x-1, y)<<7 | judge(img, x-1, y+1)<<6 | judge(img, x, y+1)<<5 | judge(img, x+1, y+1)<<4 |\
              judge(img, x+1, y)<<3 | judge(img, x+1, y-1)<<2 | judge(img, x, y-1)<<1 | judge(img, x-1, y-1)
